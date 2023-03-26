@@ -8,18 +8,18 @@
     
 
     if (formatDate(z(z - 1))) {
-      alert("прямо сейчас");
+      alert("Right now");
     }
     if (formatDate(z(z - 30 * 1000))) {
-      alert("30 сек. назад");
+      alert("30 sec. back");
     }
     
     if (formatDate(z(z - 5 * 60 * 1000))) {
-      alert("5 мин. назад");
+      alert("5 min. back");
     }
     
     if (formatDate(z(z - 86400* 4 * 1000))) {
-      alert("вчерашняя дата вроде 31.12.2016, 20:00");
+      alert("Yesterday");
     }
 
 
@@ -33,14 +33,14 @@
    // function formatDate(date) { 
   //   let diffSec = (new Date() - date) / 1000; 
   //   if (diffSec < 1) { 
-  //    console.log('прямо сейчас'); 
+  //    console.log('Right now'); 
   //   } else { 
   //    let diff = (new Date() - date) / (1000 * 60); 
   //    if (diff < 1) { 
-  //     console.log(diffSec + ' сек. назад'); 
+  //     console.log(diffSec + ' sec. back'); 
   //    } 
   //    else if (diff  > 1 && diff < 60) { 
-  //     console.log(diff + ' мин. назад'); 
+  //     console.log(diff + ' min. back'); 
   //    } 
   //    else { 
   //     console.log(date.getDate() + '.' + date.getMonth() + '.' + date.getFullYear() + ' ' + date.getHours() + ':' + date.getMinutes()); 
