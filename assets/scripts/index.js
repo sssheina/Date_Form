@@ -9,34 +9,34 @@ console.log(now);
 
 function formatDate(date) {
   if (now - date < 1000) {
-    console.log("прямо сейчас");
+    console.log("Right now");
   } else if (now - date < 30 * 1000) {
-    console.log("30 сек. назад");
+    console.log("30 sec. back");
   } else if (now - date < 5 * 60 * 1000) {
-    console.log("5 мин. назад");
+    console.log("5 min. back");
   } else if (now - date < 24 * 3600 * 1000) {
-    console.log("Вчера");
-  } else console.log("Более суток");
+    console.log("Yesterday");
+  } else console.log("Over 24 h. ago");
 }
 
 
 
 
 let a = new Date(new Date() - 1000);
-div1.textContent = (`Прямо сейчас: ${a}`);
+div1.textContent = (`Right now: ${a}`);
 
 let c = new Date(new Date() - 30000);
-div2.textContent = (`30 сек. назад: ${c}`);
+div2.textContent = (`30 sec. back: ${c}`);
 
 
 let e = new Date(new Date() - 5 * 60 * 1000);
-div3.textContent = (`5 мин. назад: ${e}`);
+div3.textContent = (`5 min. back: ${e}`);
 
 
 let g = new Date(new Date() - 24 * 3600 * 1000);
-div4.textContent = (`Вчера: ${g}`);
+div4.textContent = (`Yesterday: ${g}`);
 
 let i = new Date(new Date() - 48 * 3600 * 1000);
-div5.textContent = (`Более суток: ${i}`);
+div5.textContent = (`Over 24 h. ago: ${i}`);
 
 
